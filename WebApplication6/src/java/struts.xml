@@ -1,0 +1,26 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <include file="login.xml"/>
+    <!-- Configuration for the default package. -->
+    <package name="default" namespace="/jps" extends="struts-default">
+       <action name="sasadara" class="org.jps.sasadara.action.TutotialAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="addTutorial" class="org.jps.sasadara.action.TutotialAction" method="addTutorial">
+            <result name="success">/add.jsp</result>
+            <result name="failure">/notadd.jsp</result>
+        </action> 
+    </package>
+    
+  <package name="search" namespace="/" extends="struts-default">
+       <action name="searchForm">
+            <result>/searchForm.jsp</result>
+        </action> 
+  </package>  
+    
+      
+</struts>
