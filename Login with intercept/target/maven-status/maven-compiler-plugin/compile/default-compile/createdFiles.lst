@@ -1,0 +1,5 @@
+com\journaldev\struts2\interceptors\AuthenticationInterceptor.class
+com\journaldev\struts2\actions\LoginAction.class
+com\journaldev\struts2\interceptors\UserAware.class
+com\journaldev\struts2\models\User.class
+com\journaldev\struts2\actions\WelcomeAction.class
